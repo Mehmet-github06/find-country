@@ -16,7 +16,7 @@ const getCountry = async () => {
         const data = await res.json();
         allCountriesData = data;
         console.log(data);
-        displayCountry(data,"Turkey");
+        displayCountry(data);
     } catch (error) {
         console.log(error);
     }
@@ -43,8 +43,8 @@ list.innerHTML = ""
 
         card.innerHTML = `
         <ul class="list-group list-group-flush" id="list">
-        <li class="list-group-item"><img src="${flags.png}" alt="" class="img-fluid" ></li>
         <li class="list-group-item"style="font-size: 25px;">${countryName}</li>
+        <li class="list-group-item"><img src="${flags.png}" alt="" class="img-fluid" ></li>
         <li class="list-group-item">Region: ${region}</li>
         <li class="list-group-item">Capitals: ${capital}</li>
         <li class="list-group-item">Languages: ${Object.keys(languages)}</li>
