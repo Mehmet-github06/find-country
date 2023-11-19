@@ -1,0 +1,104 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url(https://cdn.pixabay.com/photo/2016/10/20/18/35/earth-1756274_1280.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    &::-webkit-scrollbar{
+        display: none;
+    }
+        
+    }
+   
+    
+    .world{
+    display: flex;    
+    justify-content: center;
+    align-items: center;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+    flex-direction: column;
+     & img{
+        width: 150px;
+        margin-bottom: 50px;
+    }
+
+    }
+ 
+    .btn{
+    background-color: rgb(0, 251, 59);
+    color: black;  
+    font-family: 'Playpen Sans', cursive; 
+    border: none;
+   
+    }
+    .btn:hover{
+        background-color: rgb(0, 251, 59);
+        opacity: .8;
+    }
+    
+    #searchinput{
+    width: 460px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    background-color: rgba(103, 158, 172, 0.486);
+    box-shadow: 0 0 5px #06474c69, 
+    0 0 15px #083654,
+    0 0 20px #062d43, 
+    0 0 25px rgb(7, 57, 80), 
+    0 0 50px #5a7276, 
+    0 0 50px #5c6e72, 
+    0 0 50px #3a7c7c;
+    
+    }
+    
+    
+    .card{
+    margin-top: 30px;
+        /* width: 380px;
+        height: 500px; */
+    border-radius: 10px;
+    background-color:rgba(255, 255, 255, 0.521);
+     box-shadow: 0 0 5px #06474c69, 
+    0 0 15px #083654,
+    0 0 20px #062d43, 
+    0 0 25px rgb(7, 57, 80), 
+    0 0 50px #5a7276, 
+    0 0 50px #5c6e72, 
+    0 0 50px #3a7c7c;
+    }
+    .list-group-item{
+    background-color:rgba(255, 255, 255, 0.521);
+    font-family: 'Playpen Sans', cursive;
+    }
+    .card-title{
+    background-color:rgba(255, 255, 255, 0.521);
+    font-family: 'Playpen Sans', cursive;
+    font-size:25px;
+    
+    }
+    .card-text{
+    background-color:rgb(252, 252, 252);
+    font-family: 'Playpen Sans', cursive;
+    font-size:25px;
+    
+    }
+    .list-group-item img {
+        width: 100%; 
+        height: auto;
+    }
+    
+    @media screen and (max-width: 768px) {
+        
+        #searchinput {
+            max-width: 100%; 
+        }
+    
+        .card,
+        .list-group-item {
+            max-width: 100%; 
+        }
+    }
